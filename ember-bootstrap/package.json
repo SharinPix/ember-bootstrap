@@ -99,7 +99,7 @@
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "ember-source": ">=4.8.0",
-    "ember-modifier": "^3.2.7 || ^4.2.0"
+    "ember-modifier": "^3.2.7 || ^4.1.0"
   },
   "engines": {
     "node": "18.* || >= 20"
