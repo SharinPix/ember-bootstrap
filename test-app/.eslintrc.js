@@ -53,11 +53,13 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
       ],
-      rules: {},
+      rules: {
+        'no-undef': 'off',
+      },
     },
     // gjs files
     {
-      files: ['tests/**/*.gjs'],
+      files: ['**/*.gjs'],
       parser: 'ember-eslint-parser',
       plugins: ['ember'],
       extends: [
@@ -68,7 +70,7 @@ module.exports = {
     },
     // gts files
     {
-      files: ['tests/**/*.gts'],
+      files: ['**/*.gts'],
       parser: 'ember-eslint-parser',
       plugins: ['ember'],
       extends: [
@@ -77,6 +79,9 @@ module.exports = {
         'plugin:ember/recommended',
         'plugin:ember/recommended-gts',
       ],
+      rules: {
+        'no-undef': 'off',
+      },
     },
     // node files
     {

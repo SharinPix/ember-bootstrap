@@ -12,16 +12,15 @@
     "lint:fix": "pnpm --recursive lint:fix",
     "test": "concurrently \"npm:test:*\"",
     "test:ember": "pnpm --filter test-app test:ember",
-    "test:node": "pnpm --filter ember-bootstrap nodetest",
     "release": "pnpm --filter ember-bootstrap release"
   },
   "devDependencies": {
-    "concurrently": "8.2.2",
-    "husky": "9.1.4",
-    "lint-staged": "15.2.8"
+    "concurrently": "9.2.1",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7"
   },
   "volta": {
-    "node": "18.20.4",
-    "pnpm": "8.15.9"
+    "node": "20.19.6",
+    "pnpm": "10.23.0"
   }
 }

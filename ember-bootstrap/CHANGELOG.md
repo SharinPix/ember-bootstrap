@@ -1,25 +1,59 @@
+# Changelog
 
 
+## v6.6.1 (2025-11-13)
+
+Re-release of v6.6.0 without any changes. v6.6.0 got released from a feature branch by accident.
 
 
+## v6.6.0 (2025-11-13)
 
+#### :rocket: Enhancement
+* [#2203](https://github.com/ember-bootstrap/ember-bootstrap/pull/2203) remove blueprints not supported in v2 addon ([@jelhan](https://github.com/jelhan))
+* [#2192](https://github.com/ember-bootstrap/ember-bootstrap/pull/2192) Replace requirejs require in dom.js with @embroider/macros importSync ([@SanderKnauff](https://github.com/SanderKnauff))
+* [#2193](https://github.com/ember-bootstrap/ember-bootstrap/pull/2193) Fix deprecations triggered by importing from ember barrel file ([@locks](https://github.com/locks))
+* [#2178](https://github.com/ember-bootstrap/ember-bootstrap/pull/2178) Convert bs-carousel to Typescript ([@SanderKnauff](https://github.com/SanderKnauff))
 
+#### :bug: Bug Fix
+* [#2204](https://github.com/ember-bootstrap/ember-bootstrap/pull/2204) Fix popover/tooltip crash when hiding before element renders ([@emmanuel-ferdman](https://github.com/emmanuel-ferdman))
+* [#2191](https://github.com/ember-bootstrap/ember-bootstrap/pull/2191) resolve deprecation "do not import inject from @ember/service" ([@ZacharyMohler](https://github.com/ZacharyMohler))
 
+#### :memo: Documentation
+* [#2189](https://github.com/ember-bootstrap/ember-bootstrap/pull/2189) Update API docs of modal's vertical for BS5 support ([@drauschenbach](https://github.com/drauschenbach))
 
+#### :house: Internal
+* [#2195](https://github.com/ember-bootstrap/ember-bootstrap/pull/2195) Disable modal animation tests in Safari ([@SanderKnauff](https://github.com/SanderKnauff))
+* [#2184](https://github.com/ember-bootstrap/ember-bootstrap/pull/2184) gts and gjs files were not linted by ESLint due to wrong configuration ([@jelhan](https://github.com/jelhan))
 
+#### Committers: 6
+- David Rauschenbach ([@drauschenbach](https://github.com/drauschenbach))
+- Emmanuel Ferdman ([@emmanuel-ferdman](https://github.com/emmanuel-ferdman))
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+- Ricardo Mendes ([@locks](https://github.com/locks))
+- Sander Knauff ([@SanderKnauff](https://github.com/SanderKnauff))
+- Zachary Mohler ([@ZacharyMohler](https://github.com/ZacharyMohler))
 
+## v6.5.0 (2025-03-18)
 
+#### :rocket: Enhancement
+* [#2180](https://github.com/ember-bootstrap/ember-bootstrap/pull/2180) support @ember/render-modifiers v3 ([@jelhan](https://github.com/jelhan))
+* [#2177](https://github.com/ember-bootstrap/ember-bootstrap/pull/2177) Convert bs-accordion to Typescript ([@SanderKnauff](https://github.com/SanderKnauff))
+* [#2176](https://github.com/ember-bootstrap/ember-bootstrap/pull/2176) Convert bs-alert to Typescript ([@SanderKnauff](https://github.com/SanderKnauff))
+* [#2115](https://github.com/ember-bootstrap/ember-bootstrap/pull/2115) Convert BsModal related classes to TS ([@SanderKnauff](https://github.com/SanderKnauff))
+* [#2166](https://github.com/ember-bootstrap/ember-bootstrap/pull/2166) Convert BsTooltip to Typescript ([@SanderKnauff](https://github.com/SanderKnauff))
+* [#2164](https://github.com/ember-bootstrap/ember-bootstrap/pull/2164) Convert BsProgress to TypeScript ([@SanderKnauff](https://github.com/SanderKnauff))
 
+#### :memo: Documentation
+* [#2163](https://github.com/ember-bootstrap/ember-bootstrap/pull/2163) Removed action helper from BsButton API doc ([@SanderKnauff](https://github.com/SanderKnauff))
+* [#2162](https://github.com/ember-bootstrap/ember-bootstrap/pull/2162) Cleanup outdated information about Bootstrap 3 from BsNavbar API docs ([@jelhan](https://github.com/jelhan))
 
+#### :house: Internal
+* [#2170](https://github.com/ember-bootstrap/ember-bootstrap/pull/2170) regenerate lockfile with pinned npm version ([@jelhan](https://github.com/jelhan))
+* [#2171](https://github.com/ember-bootstrap/ember-bootstrap/pull/2171) clean-up unused internal arguments of BsDropdown and BsDropdown::Menu ([@jelhan](https://github.com/jelhan))
 
-
-
-
-
-
-
-
-
+#### Committers: 2
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+- Sander Knauff ([@SanderKnauff](https://github.com/SanderKnauff))
 
 ## v6.4.2 (2024-11-11)
 
