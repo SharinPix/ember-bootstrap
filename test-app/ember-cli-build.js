@@ -8,6 +8,16 @@ module.exports = function (defaults) {
 
   const options = {
     'ember-bootstrap': {},
+    '@embroider/macros': {
+      setConfig: {
+        'ember-bootstrap': {
+          isBS4: false,
+          isBS5: true,
+          isNotBS5: false,
+          version: '6.6.1',
+        },
+      },
+    },
     'ember-cli-babel': {
       includePolyfill: !!process.env.BABELPOLYFILL,
       enableTypeScriptTransform: true,
@@ -53,6 +63,19 @@ module.exports = function (defaults) {
     packagerOptions: {
       webpackConfig: {
         devtool: false,
+        resolve: {
+          fullySpecified: false,
+        },
+        module: {
+          rules: [
+            {
+              test: /\.m?js$/,
+              resolve: {
+                fullySpecified: false,
+              },
+            },
+          ],
+        },
       },
     },
   });

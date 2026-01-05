@@ -12,11 +12,12 @@
     // work with TypeScript.
     "baseUrl": ".",
     "paths": {
-      "ember-bootstrap": ["addon"],
-      "ember-bootstrap/*": ["addon/*"],
+      "ember-bootstrap": ["src"],
+      "ember-bootstrap/*": ["src/*"],
       "*": ["types/*"]
     }
   },
+  "include": ["src/**/*", "types/**/*"],
   "glint": {
     "environment": ["ember-loose"]
   }
