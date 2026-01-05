@@ -18,31 +18,98 @@
   "author": "Simon Ihmig <ihmig@kaliber5.de>",
   "exports": {
     ".": "./dist/index.js",
-    "./*": {
-      "types": "./declarations/*.d.ts",
-      "default": "./dist/*.js"
-    },
-    "./components/*": {
-      "types": "./declarations/components/*.d.ts",
-      "default": "./dist/components/*.js"
-    },
-    "./helpers/*": {
-      "types": "./declarations/helpers/*.d.ts",
-      "default": "./dist/helpers/*.js"
-    },
-    "./modifiers/*": {
-      "types": "./declarations/modifiers/*.d.ts",
-      "default": "./dist/modifiers/*.js"
-    },
-    "./utils/*": {
-      "types": "./declarations/utils/*.d.ts",
-      "default": "./dist/utils/*.js"
-    },
-    "./initializers/*": {
-      "types": "./declarations/initializers/*.d.ts",
-      "default": "./dist/initializers/*.js"
-    },
-    "./addon-main.cjs": "./addon-main.cjs"
+    "./config": "./dist/config.js",
+    "./version": "./dist/version.js",
+    "./template-registry": "./dist/template-registry.js",
+    "./macros-config": "./dist/macros-config.js",
+    "./addon-main.cjs": "./addon-main.cjs",
+
+    "./components/bs-accordion": "./dist/components/bs-accordion.js",
+    "./components/bs-accordion/item": "./dist/components/bs-accordion/item.js",
+    "./components/bs-accordion/item/body": "./dist/components/bs-accordion/item/body.js",
+    "./components/bs-accordion/item/title": "./dist/components/bs-accordion/item/title.js",
+    "./components/bs-alert": "./dist/components/bs-alert.js",
+    "./components/bs-button": "./dist/components/bs-button.js",
+    "./components/bs-button-group": "./dist/components/bs-button-group.js",
+    "./components/bs-button-group/button": "./dist/components/bs-button-group/button.js",
+    "./components/bs-carousel": "./dist/components/bs-carousel.js",
+    "./components/bs-carousel/slide": "./dist/components/bs-carousel/slide.js",
+    "./components/bs-collapse": "./dist/components/bs-collapse.js",
+    "./components/bs-contextual-help": "./dist/components/bs-contextual-help.js",
+    "./components/bs-contextual-help/element": "./dist/components/bs-contextual-help/element.js",
+    "./components/bs-dropdown": "./dist/components/bs-dropdown.js",
+    "./components/bs-dropdown/button": "./dist/components/bs-dropdown/button.js",
+    "./components/bs-dropdown/menu": "./dist/components/bs-dropdown/menu.js",
+    "./components/bs-dropdown/menu/divider": "./dist/components/bs-dropdown/menu/divider.js",
+    "./components/bs-dropdown/menu/item": "./dist/components/bs-dropdown/menu/item.js",
+    "./components/bs-dropdown/toggle": "./dist/components/bs-dropdown/toggle.js",
+    "./components/bs-form": "./dist/components/bs-form.js",
+    "./components/bs-form/element": "./dist/components/bs-form/element.js",
+    "./components/bs-form/element/control": "./dist/components/bs-form/element/control.js",
+    "./components/bs-form/element/control/checkbox": "./dist/components/bs-form/element/control/checkbox.js",
+    "./components/bs-form/element/control/input": "./dist/components/bs-form/element/control/input.js",
+    "./components/bs-form/element/control/radio": "./dist/components/bs-form/element/control/radio.js",
+    "./components/bs-form/element/control/switch": "./dist/components/bs-form/element/control/switch.js",
+    "./components/bs-form/element/control/textarea": "./dist/components/bs-form/element/control/textarea.js",
+    "./components/bs-form/element/errors": "./dist/components/bs-form/element/errors.js",
+    "./components/bs-form/element/feedback-icon": "./dist/components/bs-form/element/feedback-icon.js",
+    "./components/bs-form/element/help-text": "./dist/components/bs-form/element/help-text.js",
+    "./components/bs-form/element/label": "./dist/components/bs-form/element/label.js",
+    "./components/bs-form/element/layout/horizontal": "./dist/components/bs-form/element/layout/horizontal.js",
+    "./components/bs-form/element/layout/horizontal/checkbox": "./dist/components/bs-form/element/layout/horizontal/checkbox.js",
+    "./components/bs-form/element/layout/inline": "./dist/components/bs-form/element/layout/inline.js",
+    "./components/bs-form/element/layout/inline/checkbox": "./dist/components/bs-form/element/layout/inline/checkbox.js",
+    "./components/bs-form/element/layout/vertical": "./dist/components/bs-form/element/layout/vertical.js",
+    "./components/bs-form/element/layout/vertical/checkbox": "./dist/components/bs-form/element/layout/vertical/checkbox.js",
+    "./components/bs-form/element/legend": "./dist/components/bs-form/element/legend.js",
+    "./components/bs-link-to": "./dist/components/bs-link-to.js",
+    "./components/bs-list-group": "./dist/components/bs-list-group.js",
+    "./components/bs-list-group/item": "./dist/components/bs-list-group/item.js",
+    "./components/bs-modal": "./dist/components/bs-modal.js",
+    "./components/bs-modal-simple": "./dist/components/bs-modal-simple.js",
+    "./components/bs-modal/body": "./dist/components/bs-modal/body.js",
+    "./components/bs-modal/dialog": "./dist/components/bs-modal/dialog.js",
+    "./components/bs-modal/footer": "./dist/components/bs-modal/footer.js",
+    "./components/bs-modal/header": "./dist/components/bs-modal/header.js",
+    "./components/bs-modal/header/close": "./dist/components/bs-modal/header/close.js",
+    "./components/bs-modal/header/title": "./dist/components/bs-modal/header/title.js",
+    "./components/bs-nav": "./dist/components/bs-nav.js",
+    "./components/bs-nav/item": "./dist/components/bs-nav/item.js",
+    "./components/bs-navbar": "./dist/components/bs-navbar.js",
+    "./components/bs-navbar/content": "./dist/components/bs-navbar/content.js",
+    "./components/bs-navbar/link-to": "./dist/components/bs-navbar/link-to.js",
+    "./components/bs-navbar/nav": "./dist/components/bs-navbar/nav.js",
+    "./components/bs-navbar/toggle": "./dist/components/bs-navbar/toggle.js",
+    "./components/bs-popover": "./dist/components/bs-popover.js",
+    "./components/bs-popover/element": "./dist/components/bs-popover/element.js",
+    "./components/bs-progress": "./dist/components/bs-progress.js",
+    "./components/bs-progress/bar": "./dist/components/bs-progress/bar.js",
+    "./components/bs-spinner": "./dist/components/bs-spinner.js",
+    "./components/bs-tab": "./dist/components/bs-tab.js",
+    "./components/bs-tab/pane": "./dist/components/bs-tab/pane.js",
+    "./components/bs-tooltip": "./dist/components/bs-tooltip.js",
+    "./components/bs-tooltip/element": "./dist/components/bs-tooltip/element.js",
+
+    "./helpers/bs-contains": "./dist/helpers/bs-contains.js",
+    "./helpers/bs-default": "./dist/helpers/bs-default.js",
+    "./helpers/bs-eq": "./dist/helpers/bs-eq.js",
+    "./helpers/bs-form-horiz-input-class": "./dist/helpers/bs-form-horiz-input-class.js",
+    "./helpers/bs-form-horiz-offset-class": "./dist/helpers/bs-form-horiz-offset-class.js",
+    "./helpers/bs-noop": "./dist/helpers/bs-noop.js",
+    "./helpers/bs-size-class": "./dist/helpers/bs-size-class.js",
+    "./helpers/bs-type-class": "./dist/helpers/bs-type-class.js",
+
+    "./modifiers/bs-conditional-attribute": "./dist/modifiers/bs-conditional-attribute.js",
+
+    "./initializers/load-bootstrap-config": "./dist/initializers/load-bootstrap-config.js",
+
+    "./utils/decorators/arg": "./dist/utils/decorators/arg.js",
+    "./utils/decorators/uses-transition": "./dist/utils/decorators/uses-transition.js",
+    "./utils/dom": "./dist/utils/dom.js",
+    "./utils/form-validation-class": "./dist/utils/form-validation-class.js",
+    "./utils/is-fastboot": "./dist/utils/is-fastboot.js",
+    "./utils/size-class": "./dist/utils/size-class.js",
+    "./utils/transition-end": "./dist/utils/transition-end.js"
   },
   "typesVersions": {
     "*": {
@@ -108,6 +175,7 @@
     "@typescript-eslint/parser": "7.18.0",
     "babel-plugin-ember-template-compilation": "^2.3.0",
     "concurrently": "9.2.1",
+    "ember-source": "^5.12.0",
     "ember-template-lint": "5.13.0",
     "ember-template-lint-plugin-prettier": "5.0.0",
     "eslint": "8.57.1",
@@ -144,16 +212,6 @@
       "ember": ">=4.8.0"
     },
     "demoURL": "https://www.ember-bootstrap.com",
-    "config": {
-      "@embroider/macros": {
-        "setOwnConfig": {
-          "isBS4": false,
-          "isBS5": true,
-          "isNotBS5": false,
-          "version": "6.6.1"
-        }
-      }
-    },
     "app-js": {
       "./components/bs-accordion.js": "./dist/_app_/components/bs-accordion.js",
       "./components/bs-accordion/item.js": "./dist/_app_/components/bs-accordion/item.js",
