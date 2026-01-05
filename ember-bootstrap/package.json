@@ -33,6 +33,7 @@
     "build": "concurrently \"npm:build:*\" --names \"build:\"",
     "build:js": "rollup --config",
     "build:types": "glint --declaration",
+    "prepare": "npm run build:js",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\"",
     "lint:hbs": "ember-template-lint .",
