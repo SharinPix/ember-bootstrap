@@ -1,7 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist/
+# Note: /dist/ is NOT gitignored for v2 addon - it must be committed for git-based installation
 /tmp/
 /declarations/
 

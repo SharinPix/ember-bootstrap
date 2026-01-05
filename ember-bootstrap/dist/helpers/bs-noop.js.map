@@ -1,0 +1,1 @@
+{"version":3,"file":"bs-noop.js","sources":["../../src/helpers/bs-noop.ts"],"sourcesContent":["const noop = () => {};\n\nexport default function bsNoopHelper() {\n  return noop;\n}\n"],"names":["noop","bsNoopHelper"],"mappings":"AAAA,MAAMA,IAAI,GAAGA,MAAM,CAAC,CAAC;AAEN,SAASC,YAAYA,GAAG;AACrC,EAAA,OAAOD,IAAI;AACb;;;;"}
