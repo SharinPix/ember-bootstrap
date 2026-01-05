@@ -60,7 +60,7 @@ module.exports = {
         './.prettierrc.js',
         './.stylelintrc.js',
         './.template-lintrc.js',
-        './addon-main.cjs',
+        './addon-main.js',
         './babel.config.cjs',
         './rollup.config.mjs',
         './config/**/*.js',

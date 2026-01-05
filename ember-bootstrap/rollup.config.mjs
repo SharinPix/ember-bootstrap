@@ -63,6 +63,10 @@ export default {
     // "app" tree. Things in here should also be in publicEntrypoints above, but
     // not everything in publicEntrypoints necessarily needs to go here.
     addon.appReexports([
+      // Top-level modules
+      'config.js',
+      'version.js',
+
       // Components
       'components/**/*.js',
 
@@ -74,6 +78,9 @@ export default {
 
       // Initializers
       'initializers/**/*.js',
+
+      // Utils
+      'utils/**/*.js',
     ]),
 
     // Follow the V2 Addon rules about dependencies. Your code can import from
